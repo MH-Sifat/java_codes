@@ -1,0 +1,39 @@
+/*
+Problem 2: Input and Output
+Write a Java program that takes user input for a student's name, age, and grade. After gathering the inputs, display them in a formatted output.
+Instructions:
+- Use `Scanner` for input.
+- Print the student's details in a readable format.
+Example:
+Enter name: John Doe
+Enter age: 20
+Enter grade: A
+Output:
+Student Details:
+Name: John Doe
+Age: 20
+Grade: A
+*/
+
+import java.util.Scanner;
+
+public class Student{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Name:");
+		String name = sc.nextLine();
+		System.out.print("Enter Age:");
+		int age = sc.nextInt();
+		System.out.print("Enter Grade:");
+		//char grade = sc.next().charAt(0);
+		//String grade = sc.next();
+		sc.nextLine();
+		String grade = sc.nextLine();
+		
+		System.out.println("Student Details:");
+		System.out.println("Name:"+name);
+		System.out.println("Age:"+age);
+		System.out.println("Grade:"+grade);
+
+	}
+}

@@ -1,0 +1,104 @@
+// Class to represent the Bank Account
+public class BankAccount {
+    
+    // Attributes (Fields)
+    private int accountNumber;
+    private String accountHolderName;
+    private double balance;
+
+    // Default Constructor
+    public BankAccount() {
+        System.out.println("Empty Account");
+    }
+
+    // Parameterized Constructor
+    public BankAccount(int accountNumber, String accountHolderName, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+		System.out.println("\n Demo Account");
+    }
+
+    // Setters
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    // Getters
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    // Method to transfer money from one account to another
+    public void sendMoney(BankAccount account, double amount) {
+        if (this.balance >= amount) {
+            this.balance = balance - amount;          // Deduct from sender's account
+			
+            account.balance = account.balance + amount;       // Add to recipient's account
+			
+            System.out.println("Money transferred: " + amount);
+        } 
+		else {
+            System.out.println("Insufficient balance to transfer money.");
+        }
+    }
+
+    // Method to display account details
+    public void showDetails() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Holder Name: " + accountHolderName);
+        System.out.println("Balance: " + balance);
+    }
+
+    // Main method to test the BankAccount class
+    public static void main(String[] args) {
+        // Creating two bank accounts using parameterized constructor and SetGet Method
+		// Account 1 
+        BankAccount a1 = new BankAccount();
+		
+		a1.setAccountNumber(101);
+		a1.setAccountHolderName("Mehedi");
+		a1.setBalance(5000.0);
+		
+		// Displaying account details before transfer
+        System.out.println("Account 1 Details Before Transfer:");
+		System.out.println("Account Number: " + a1.getAccountNumber());
+        System.out.println("Account Holder Name: " + a1.getAccountHolderName());
+        System.out.println("Balance: " + a1.getBalance());
+		
+		// Account 2
+        BankAccount a2 = new BankAccount(102, "Sifat", 3000.0);
+
+        System.out.println("\nAccount 2 Details Before Transfer:");   // \n eta use korle er ager line e ekta line break hoy
+        a2.showDetails();
+        
+		System.out.println(" ");
+        // Transfer money from account1 to account2
+        a1.sendMoney(a2, 1500.0);
+
+        // Displaying account details after transfer
+        System.out.println("\nA ccount 1 Details After Transfer:");
+		System.out.println("Account Number: " + a1.getAccountNumber());
+        System.out.println("Account Holder Name: " + a1.getAccountHolderName());
+        System.out.println("Balance: " + a1.getBalance());
+
+        System.out.println("\nAccount 2 Details After Transfer:");
+        a2.showDetails();
+    }
+}
