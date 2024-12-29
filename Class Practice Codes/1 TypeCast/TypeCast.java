@@ -1,16 +1,17 @@
-/*
+
 public class TypeCast{
 	public static void main(String[] args){
 		// int to byte convert
-		int a = 256;
+		float a = 456.56f;
 		byte b =(byte)a;
 		System.out.println(a + " "+ b);
+		/*
 		// byte to int convert
 		byte c = 112;
 		int d =(int)c;
 		System.out.println(c + " "+ d);
 		// int to Short convert
-		int e = 521;
+		int e = 546666;
 		short f =(short)e;
 		System.out.println(e + " "+ f);
 		// double to byte convert
@@ -21,10 +22,11 @@ public class TypeCast{
 		char i ='A';
 		int j =(int)i;
 		System.out.println(i + " "+ j);
+		*/
 	}
 }
 		
-*/
+
 
 
 // type casting 

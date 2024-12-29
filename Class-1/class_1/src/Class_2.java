@@ -15,7 +15,7 @@ public class Class_2{
 // java is statically typed -> variable must be declared before use
 // 1 byte = 8 bit.The byte values of data types( byte takes/size 1 bytes,short takes 2 bytes,int takes 4 bytes,float takes 4 bytes,long takes 8 bytes,double takes 8 bytes,char takes 2 bytes,bool size is depends on jvm(means machine) )
 // to calculate the value range of data types ( -2^8n to 2^8n-1 ) it is the formula. example: ( for byte data type -2^8*1 / 2 to 2^8*1 / 2 -1 = - 2^8 /2 to 2^8/2 -1 = -128 to 127 ) [only char data type value range start from 0 to 2^8n -1 & bool data type value range is only true or false]
-// byte,short,int,long data types default value is 0.float default value is 0.0f (f->float).double default value is 0.0d (d->double).char default value is '\ u000'.bool default value is false.String or any object default value is null.
+// byte,short,int,long data types default value is 0.float default value is 0.0f (f->float).double default value is 0.0d (d->double).char default value is '\ u0000'.bool default value is false.String or any object default value is null.
 
         // declaring variables
         int num_1, num_2, num_3, sum , sub,  mul, div;

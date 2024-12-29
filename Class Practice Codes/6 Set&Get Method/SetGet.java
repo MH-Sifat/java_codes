@@ -49,13 +49,13 @@ public class SetGet{
 */	
 
 
-/*	
+
 class Person{
 	private String name;
 	private int age;
 	
-	public void setName(String n){
-		this.name = n;
+	public void setName(String a){
+		this.name = a;
 	}
 	public void setAge(int a){
 		if(a > 0){
@@ -95,4 +95,4 @@ public class SetGet{
 	}
 }
 	
-*/
+

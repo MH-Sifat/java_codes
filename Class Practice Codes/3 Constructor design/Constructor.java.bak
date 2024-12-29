@@ -3,8 +3,8 @@
 class Constructor{
 	int age , id;
 	String name;
-	Constructor(){
-		System.out.println("Dhon: ");
+	public Constructor(){
+		System.out.println("Default: ");
 	}
 	Constructor(String n , int a,int i){
 		name = n;
@@ -41,11 +41,12 @@ public class Constructor{
 }
 */
 
-
 /*
+
 public class Constructor{
-	private String name; // this is class variable , instance variable
-	private int Id; // class variable 
+	private String name; // instance variable
+	// private static name // this is class variable ,
+	private int Id; 
 	// class name ar Constructor name same hobe
 	
 	// default constructor
@@ -79,7 +80,6 @@ public class Constructor{
 */
 
 
-
 // copy constructor
 // optional_modifier constructor_name(constructor_name var_name){
 //}
@@ -87,11 +87,12 @@ class Constructor{
 	       
 		int i;
 		String n;
-		public Constructor(int i, String n){
-			this.i=i;// instance variable= local variable
-		    this.n=n;
+		public Constructor(int a, String b){
+			this.i = a;// instance variable = local variable
+		    this.n = b;
 		}
-		public Constructor(Constructor c)
+		// copy constructor e data type e sei constructor er name thakbe karon amra ekhne ekta full object pathachi
+		public Constructor(Constructor c)  // c > cp > i,n
 		{
 			i=c.i;
 			n=c.n;
@@ -103,9 +104,12 @@ class Constructor{
 		
 		public static void main(String args[]){
 			Constructor cp = new Constructor(12,"Kabir");
+			
 			Constructor ct = new Constructor(cp);
+			
 			cp.display1();
             ct.display1();
+			
 			}
 }
 		

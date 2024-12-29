@@ -50,8 +50,8 @@ public class StringOper{
 		System.out.println(subName.substring(0));
 		
 		// name.substring(int startingVlaue , int endingValue) eta use korle starting e je value deoua thake oita theke ending e je value deoua thakbe oitar age porjonto print hobe 
-	    String subCheck = "0123456789";
-	    System.out.println(subCheck.substring(5,10));
+	    String subCheck = "123456789";
+	    System.out.println(subCheck.substring(5,8));
 		
 		// name.replace(1st char , 2nd char) eta use korle 1st char e jeta thakbe oita replace kore 2nd char ta shekhane boshbe
 		String replaceCheck = "Harry";
@@ -90,7 +90,19 @@ public class StringOper{
 		System.out.println(indexCheckRange.equals("hurrray"));
 		System.out.println(indexCheckRange.equals("hurray"));
 		
+		// etai case sensitive er problem hoy nah value same hole e true hoy
 		System.out.println(indexCheckRange.equalsIgnoreCase("Hurrray"));
+		
+		String forCom1 = "My name";
+		String forCom2 = "My Name";
+		
+		// comapre korte use hoy soman hole 0 jetar sathe comapre kortasi oita choto hole value 0 theke choto hobe ar boro hole 0 theke boro
+		System.out.println(forCom1.compareTo(forCom2));
+		
+		
+		// duita eksathe jora lagate use hoy
+		System.out.println(forCom1.concat(forCom2));
+
 		
 	}
 }

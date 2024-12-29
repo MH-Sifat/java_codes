@@ -18,8 +18,8 @@ public class Method{
 	// methods for +,/,%
 	// method return values
     public int add(int a, int b){  
-    s = a+b;  
-    return s;  
+       s = a+b;  
+       return s;  
 	}
     public float div(int a, int b){  
        d = a/b; 
@@ -48,7 +48,8 @@ public class Method {
         // Check if the denominator is zero
         if (denominator == 0) {
             System.out.println("Division is not possible (denominator is 0).");
-        } else {
+        } 
+		else {
             // Perform division and calculate remainder
             int quotient = numerator / denominator;
             int remainder = numerator % denominator;
@@ -67,20 +68,20 @@ public class Method {
         mathOps.divisionAndRemainder(10, 3);  // Output: Quotient: 3, Remainder: 1
     }
 }
-
 */
 
-/*
 
+
+/*
 //method overloading 
 // syntax : use the same name of method multiple times inside a class.
-public class Method3{
+public class Method{
 	public static int area(int side){
 		return side*side;
-		}
-		public static int area(int side1, int side2){
+	}
+	public static int area(int side1, int side2){
 		return side1*side2;
-		}
+	}
 	public static void main(String args[]){
 		System.out.println("Area 1 is:" +area(4));
 		System.out.println("Area 1 is:" +area(5,7));
@@ -88,28 +89,29 @@ public class Method3{
 		
     }
 }
-
 */
+
 
 
 // static method
 //static methods: they can be called or invoked directly from classname
 
-class TestStatic4{
+class Method{
 	public int add(int a, int b){
 	return a+b;}
+	
 	public static int multiply(int a, int b){
 	return a*b;}
+	
 	public static void main(String args[]){
 		
-		int result;
+	int result;
 		
-	TestStatic4 t1=new TestStatic4();
-	result= t1.add(23,4);
+	Method t1 = new Method();
+	result = t1.add(23,4);
 	System.out.println(result);
-	int result2=TestStatic4.multiply(5,4);
+	int result2 = Method.multiply(5,4);
 	System.out.println(result2);
 	
-	
-
-}}
+}
+}

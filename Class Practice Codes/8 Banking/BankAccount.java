@@ -1,4 +1,5 @@
 // Class to represent the Bank Account
+
 public class BankAccount {
     
     // Attributes (Fields)
@@ -7,7 +8,7 @@ public class BankAccount {
     private double balance;
 
     // Default Constructor
-    public BankAccount() {
+    public BankAccount(){
         System.out.println("Empty Account");
     }
 
@@ -46,8 +47,8 @@ public class BankAccount {
     }
 
     // Method to transfer money from one account to another
-    public void sendMoney(BankAccount account, double amount) {
-        if (this.balance >= amount) {
+    public void sendMoney(BankAccount account, double amount){
+        if (this.balance >= amount){
             this.balance = balance - amount;          // Deduct from sender's account
 			
             account.balance = account.balance + amount;       // Add to recipient's account
@@ -67,3 +68,4 @@ public class BankAccount {
     }
 
 }
+

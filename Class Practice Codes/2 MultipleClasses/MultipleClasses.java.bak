@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-
+/*
 class Box{
 double length,heigth,depth;
 }
@@ -23,9 +23,9 @@ public class MultipleClasses{
 	}
 }
 
-
+*/
 // function calling from other class
-/*
+
 class FunctionCall{
 	String name = "Sifat";
 	byte age = 22;
@@ -52,9 +52,10 @@ public class MultipleClasses{
 		show.display();
 	}
 }
-*/
+
 
 /*
+
 class Box2{
 	String name,gender;
 	int age;

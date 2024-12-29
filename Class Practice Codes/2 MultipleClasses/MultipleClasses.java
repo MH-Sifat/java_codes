@@ -22,8 +22,8 @@ public class MultipleClasses{
 
 	}
 }
-*/
 
+*/
 // function calling from other class
 /*
 class FunctionCall{
@@ -54,6 +54,7 @@ public class MultipleClasses{
 }
 */
 
+/*
 
 class Box2{
 	String name,gender;
@@ -76,3 +77,4 @@ public class MultipleClasses{
 		info.displayIfo();
 	}
 }
+*/
