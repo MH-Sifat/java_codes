@@ -1,0 +1,5 @@
+First name	Last name	Occupation	Gender	NID	Days	Room no	Roob bill	Paid amount	Due amount	Phone number	Password	
+Tanzim	Wasif	Student	Male	1234567890	1	Deluxe-5	10000	10000	0	01599999999	12345	
+Rayatul	Bari	Student	Male	12345678	1	Deluxe-5	10000	10000	0	01876688766	1234	
+Al	Nipun	Student	Male	11111	2	Standard-6	10000	10000	0	01111	12345	
+123	123	123	Male	123	1	Standard-2	5000	5000	0	123	12345	

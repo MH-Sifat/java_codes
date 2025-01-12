@@ -1,0 +1,2 @@
+First name	Last name	Occupation	Gender	NID	Days	Room no	Roob bill	Paid amount	Due amount	Phone number	Password	
+Tanzim	Wasif	Student	Male	1234567890	1	Deluxe-5	10000	10000	0	01599999999	12345	
